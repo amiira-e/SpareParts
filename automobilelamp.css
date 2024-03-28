@@ -1,0 +1,53 @@
+/* Style the table */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+}
+
+/* Style the headings */
+.styled-table th {
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center; /* Center the text */
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd; /* Add a thicker border to the bottom */
+    font-weight: bold; /* Make the text bold */
+    font-style: oblique;
+    font-size: 35px;
+}
+
+/* Style table body */
+.styled-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center; /* Center the text */
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style alternate rows */
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: rgb(128, 2, 2);
+    font-weight: 500;
+}
+
+.styled-table tbody tr:nth-child(odd) {
+    background-color: #fffdfd;
+    font-weight: 500;
+}
+
+/* Style the images */
+.styled-table img {
+    /* max-width: 70%; */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+body {
+    padding: 20px;
+    background-color:rgb(15, 15, 15);
+}
+

@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-div {
+    /* background-color: grey; */
+    width: 50%;
+    height: 150px; /* Adjust the height as needed */
+}
+
+.top-div img {
+width : 50%;
+height: 130px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    flex: 1; /* This makes each column take up equal space */
+    padding: 20px; /* Adds some space inside the columns */
+    border: 2px solid #383030; 
+}
+
+.image-container {
+    position: relative; /* Establishes a positioning context for overlay text */
+}
+
+.image-container img {
+    width: 60%; /* Make the image fit its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Remove any space below the image */
+    /* opacity: 0.4; */
+}
+
+.image-container img:hover
+{
+    opacity: 0.6;
+    color: aquamarine;
+}
+.overlay-text {
+    position: absolute; /* Absolute positioning relative to the nearest positioned ancestor */
+    top: 50%; /* Center vertically */
+    left: 15%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset the element by half its width and height */
+    color: rgb(245, 241, 241); /* Text color */
+    font-size: 20px; /* Text size */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    /* Additional styling for text appearance */
+}
+
+/* Optional: Add some global padding */
+body {
+    padding: 20px;
+    background-color:rgb(15, 15, 15);
+}
